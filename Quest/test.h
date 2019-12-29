@@ -26,14 +26,11 @@ public:
          number = 0;
          stop_word = true;
      }
+
+     void inputAnswer();
      void inputQuestion();
-     void setQuestion();
-     void addAnswer(Ticket &ticket);
-     void setAnswer();
      void addTicket(vector<Ticket> &questions);
 };
 void runQuest(vector<Ticket> &questions, Person &person, Ticket &ticket);
-
-void writeInFile(ofstream &fout, Ticket & ticket, vector <Ticket> &questions);
 
 #endif //QUEST_TEST_H
