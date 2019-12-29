@@ -1,17 +1,15 @@
 #ifndef QUEST_TEST_H
 #define QUEST_TEST_H
-#include<string>
+#include <string>
 #include <iostream>
 #include <vector>
 using namespace std;
 class Person{
 public:
-    int number;
     int score;
     int answer;
     Person(){
         score = 0;
-        number = 0;
     }
 
 };

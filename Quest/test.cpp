@@ -4,7 +4,7 @@
 
 using namespace std;
 void Ticket::inputQuestion(){
-    cout << "Введите текст вопроса №"<< number + 1 << "\n";
+    cout << "Введите текст вопроса №"<< number + 1 << endl;
     getline(cin, question);
 }
 
@@ -27,6 +27,7 @@ void Ticket::addTicket(vector<Ticket> &questions) {
         questions[this->number].answer_correct_number--;
         cout << "Продолжим вводить билеты?|1|0|" << "\n";
         cin >> stop_word;
+        cin.ignore (7777, '\n');
         this->number++;
     }
 }
