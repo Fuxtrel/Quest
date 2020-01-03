@@ -3,6 +3,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <fstream>
 using namespace std;
 class Person{
 public:
@@ -25,10 +26,10 @@ public:
          stop_word = true;
      }
 
-     void inputAnswer();
-     void inputQuestion();
-     void addTicket(vector<Ticket> &questions);
+     void inputAnswer(ofstream &fout);
+     void inputQuestion(ofstream &fout);
+     void addTicket(vector<Ticket> &questions, ofstream &fout);
 };
-void runQuest(vector<Ticket> &questions, Person &person, Ticket &ticket);
+void runQuest(vector<Ticket> &questions, Person &person, Ticket &ticket, ifstream &fin);
 
 #endif //QUEST_TEST_H
